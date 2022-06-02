@@ -18,6 +18,8 @@ void draw () {
   apareceEllipse();
 }
 
-void mouseClicked () {
-  
+void keyPressed () {
+  if (key == ENTER) {
+    frameCount = 0;
+  }
 }
