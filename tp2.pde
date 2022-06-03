@@ -1,6 +1,7 @@
 int posX;
 int posY;
 int tam;
+int variable1;
 
 void setup () {
   size (500, 500);
@@ -9,6 +10,7 @@ void setup () {
   posX = width/2;
   posY = height/2;
   tam = 50;
+  inicializarVariables ();
 }
 
 void draw () {
@@ -18,8 +20,6 @@ void draw () {
   apareceEllipse();
 }
 
-void keyPressed () {
-  if (key == ENTER) {
-    frameCount = 0;
-  }
+void mouseClicked () {
+  inicializarVariables();
 }

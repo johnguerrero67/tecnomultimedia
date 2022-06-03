@@ -1,5 +1,5 @@
-void apareceEllipse(){
-if (mouseX >= posX && mouseY >= posY) {
+void apareceEllipse() {
+  if (mouseX >= posX && mouseY >= posY) {
     fill (150, 50);
     noStroke();
     ellipse (width/2, height/2, tam, tam);
@@ -7,4 +7,8 @@ if (mouseX >= posX && mouseY >= posY) {
   } else if (keyPressed) {
     random (tam++);
   }
+}
+
+void inicializarVariables() {
+  variable1 =100;
 }
