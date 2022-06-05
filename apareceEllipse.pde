@@ -1,14 +1,5 @@
 void apareceEllipse() {
-  if (mouseX >= posX && mouseY >= posY) {
-    fill (150, 50);
-    noStroke();
-    ellipse (width/2, height/2, tam, tam);
-    //noLoop();
-  } else if (keyPressed) {
-    random (tam++);
-  }
-}
-
-void inicializarVariables() {
-  variable1 =100;
+  float escalaEllipse = map(mouseX, 0, width, 40, 300);
+  fill(150);
+  ellipse(width/2, height/2, escalaEllipse, escalaEllipse);
 }
